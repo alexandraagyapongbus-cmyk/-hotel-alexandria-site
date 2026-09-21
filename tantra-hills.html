@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tantra Hills — Hotel Alexandria</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div style="width: 100%; background: #FFFFFF; overflow-x: hidden;">
+
+<header id="site-header" class="">
+  <div class="nav-inner">
+    <a href="index.html" style="display: flex; align-items: center; gap: 12px;">
+      <img src="images/logo-icon.png" alt="Hotel Alexandria mark" style="width: 42px; height: auto; display: block;">
+      <div style="display: flex; flex-direction: column; line-height: 1; gap: 4px;">
+        <span class="brand-name">HOTEL ALEXANDRIA</span>
+        <span class="property-tag">TANTRA HILLS</span>
+      </div>
+    </a>
+    <nav class="desktop-nav">
+      
+      <details class="hotels-menu">
+        <summary class="nav-link">Hotels</summary>
+        <div class="mega-panel">
+          <div class="mega-panel-head">OUR HOTELS</div>
+          <div class="mega-panel-sub">Two unique experiences. One Alexandria.</div>
+          <div class="mega-cards">
+            <a class="mega-card klagon-card lift img-zoom" href="klagon-hills.html">
+              <img src="images/render3_rot_cw.jpg" alt="Klagon Hills rendering">
+              <div class="scrim"></div>
+              <div class="mega-card-body">
+                <div style="font-size: 11px; letter-spacing: 1.5px; color: #C59A52; font-weight: 700;">KLAGON HILLS</div>
+                <div style="font-size: 15px; font-weight: 600; margin-top: 4px; line-height: 1.4;">Our new five-star flagship.<br>Opening October 2027.</div>
+                <div style="font-size: 12px; margin-top: 8px; text-decoration: underline;">Discover Klagon Hills &#8594;</div>
+              </div>
+            </a>
+            <a class="mega-card lift img-zoom" href="tantra-hills.html">
+              <img src="images/exterior_flags.jpg" alt="Tantra Hills exterior">
+              <div class="scrim"></div>
+              <div class="mega-card-body">
+                <div style="font-size: 11px; letter-spacing: 1.5px; color: #C59A52; font-weight: 700;">TANTRA HILLS</div>
+                <div style="font-size: 15px; font-weight: 600; margin-top: 4px; line-height: 1.4;">The original Alexandria.<br>Open now.</div>
+                <div style="font-size: 12px; margin-top: 8px; text-decoration: underline;">Explore &amp; Book &#8594;</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </details>
+      <a class="nav-link" href="index.html#experiences">Experiences</a>
+      <a class="nav-link" href="klagon-hills.html#meetings">Meetings &amp; Events</a>
+      <a class="nav-link" href="our-story.html">Our Story</a>
+      <a class="nav-link" href="contact.html">Contact</a>
+      <a class="btn btn-gold" href="#" onclick="toggleDrawer(); return false;">Book a Stay</a>
+    </nav>
+    <button class="hamburger" onclick="toggleMobileNav()" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  
+    <div style="width: 100%; background: #EEF6FC; border-top: 1px solid #C7DCEC;">
+      <div style="max-width: 1320px; margin: 0 auto; padding: 9px 28px; display: flex; gap: 22px; font-size: 12px; color: #0E2233; overflow-x: auto; align-items: center;">
+        <span style="color: #1670B9; font-weight: 700; letter-spacing: 0.5px; white-space: nowrap;">TANTRA HILLS &middot; OPEN NOW</span>
+        <a class="nav-link" href="#overview">Overview</a>
+        <a class="nav-link" href="#rooms">Rooms</a>
+        <a class="nav-link" href="#amenities">Amenities</a>
+        <a class="nav-link" href="#location">Location</a>
+        <a class="nav-link" href="#gallery">Gallery</a>
+        <a class="nav-link" href="#contact-block">Contact</a>
+        <a class="nav-link" href="klagon-hills.html" style="margin-left: auto; white-space: nowrap; color: #C59A52;">Switch Hotel &#8594;</a>
+      </div>
+    </div>
+  
+    <div id="booking-drawer" class="drawer-panel" style="width: 100%;">
+      <div style="max-width: 640px; margin: 0 auto; padding: 28px 24px 34px;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 18px;">
+          <h3 style="font-size: 19px; color: #081D3A; font-weight: 600;">Book Hotel Alexandria — Tantra Hills</h3>
+          <a href="#" onclick="toggleDrawer(); return false;" style="cursor: pointer; font-size: 20px; color: #4A5D6E; line-height: 1;">&times;</a>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; gap: 14px;">
+          <div style="flex: 1 1 150px;">
+            <label style="font-size: 11px; letter-spacing: 0.5px; color: #4A5D6E; display: block; margin-bottom: 6px;">CHECK IN</label>
+            <input type="date" style="width: 100%; box-sizing: border-box; padding: 10px; border: 1px solid #C7DCEC; border-radius: 4px; font-family: 'Work Sans', sans-serif; font-size: 13px;">
+          </div>
+          <div style="flex: 1 1 150px;">
+            <label style="font-size: 11px; letter-spacing: 0.5px; color: #4A5D6E; display: block; margin-bottom: 6px;">CHECK OUT</label>
+            <input type="date" style="width: 100%; box-sizing: border-box; padding: 10px; border: 1px solid #C7DCEC; border-radius: 4px; font-family: 'Work Sans', sans-serif; font-size: 13px;">
+          </div>
+          <div style="flex: 1 1 110px;">
+            <label style="font-size: 11px; letter-spacing: 0.5px; color: #4A5D6E; display: block; margin-bottom: 6px;">GUESTS</label>
+            <input type="number" min="1" value="2" style="width: 100%; box-sizing: border-box; padding: 10px; border: 1px solid #C7DCEC; border-radius: 4px; font-family: 'Work Sans', sans-serif; font-size: 13px;">
+          </div>
+        </div>
+        <a class="btn btn-primary" href="tel:0303973258" style="display: flex; justify-content: center; margin-top: 18px; width: 100%;">Call to Check Availability</a>
+        <div style="text-align: center; margin-top: 8px; font-size: 11px; color: #4A5D6E;">We don't yet take bookings online — this calls our reservations line directly.</div>
+        <div style="text-align: center; margin-top: 18px; padding-top: 16px; border-top: 1px solid #C7DCEC; font-size: 13px; color: #4A5D6E;">
+          Looking for Klagon Hills? Opening October 2027 —
+          <a href="klagon-hills.html" style="color: #1670B9; font-weight: 600; border-bottom: 1px solid #1670B9;">Follow the journey</a>
+        </div>
+      </div>
+    </div>
+</header>
+
+<div id="mobile-nav">
+  <button id="mobile-close" onclick="toggleMobileNav()" aria-label="Close menu">&times;</button>
+  <div style="clear: both; padding-top: 50px;">
+    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 30px;">
+      <img src="images/logo-icon.png" alt="Hotel Alexandria mark" style="width: 36px; height: auto; display: block;">
+      <div>
+        <div style="font-family: 'Fraunces', serif; font-size: 17px; font-weight: 700;">HOTEL ALEXANDRIA</div>
+      </div>
+    </div>
+    <a href="index.html">Home</a>
+    <div style="padding: 14px 0; border-bottom: 1px solid rgba(255,255,255,0.12);">
+      <div style="font-size: 17px; margin-bottom: 6px;">Hotels</div>
+      <a class="sub-link" href="klagon-hills.html" style="border: none; padding: 6px 0;">&#8594; Klagon Hills — Opening Oct 2027</a>
+      <a class="sub-link" href="tantra-hills.html" style="border: none; padding: 6px 0;">&#8594; Tantra Hills — Open Now</a>
+    </div>
+    <a href="index.html#experiences">Experiences</a>
+    <a href="klagon-hills.html#meetings">Meetings &amp; Events</a>
+    <a href="our-story.html">Our Story</a>
+    <a href="contact.html">Contact</a>
+    <a class="btn btn-gold" href="tel:0303973258" style="margin-top: 24px;">Book / Inquire</a>
+  </div>
+</div>
+
+<div id="overview" style="position: relative; width: 100%; min-height: 62vh; display: flex; align-items: flex-end; overflow: hidden;">
+    <img class="settle" src="images/exterior_flags.jpg" alt="Hotel Alexandria Tantra Hills exterior" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;">
+    <div style="position: absolute; inset: 0; background: linear-gradient(0deg, rgba(8,29,58,0.82) 0%, rgba(22,112,185,0.25) 75%);"></div>
+    <div style="position: relative; max-width: 1320px; margin: 0 auto; padding: 60px 28px 50px; width: 100%; box-sizing: border-box;">
+      <div class="eyebrow eyebrow-gold" style="margin-bottom: 10px;">HOTEL ALEXANDRIA</div>
+      <div style="font-size: 12px; letter-spacing: 2px; color: #FFFFFF; font-weight: 600; padding-bottom: 8px; border-bottom: 2px solid #1670B9; display: inline-block; margin-bottom: 18px;">TANTRA HILLS &middot; OPEN NOW</div>
+      <h1 style="font-size: clamp(34px, 5vw, 48px); color: #FFFFFF; font-weight: 600;">Comfortable stays in Accra.</h1>
+      <p style="font-size: 15px; color: #D9EAF6; margin-top: 12px; max-width: 460px;">Convenient location, genuine Ghanaian hospitality — the original Hotel Alexandria.</p>
+      <div style="display: flex; gap: 16px; margin-top: 26px; flex-wrap: wrap;">
+        <a class="btn btn-primary" href="#" onclick="toggleDrawer(); return false;">Book a Stay</a>
+        <a class="btn btn-line" href="#rooms">View Rooms</a>
+      </div>
+    </div>
+</div>
+
+<div class="reveal" style="max-width: 800px; margin: 0 auto; padding: 70px 28px 20px; text-align: center;">
+  <p style="font-size: 16px; line-height: 1.8; color: #4A5D6E;">Hotel Alexandria — Tantra Hills is the original Alexandria: comfortable, well-located and practical, with everything you need for a productive and relaxed stay in Accra. It's where our story began in 2019, and it remains open and welcoming guests today.</p>
+</div>
+
+<div id="rooms" style="width: 100%; padding: 50px 28px 40px;">
+    <div style="max-width: 1320px; margin: 0 auto;">
+      <div class="reveal">
+      <div class="eyebrow eyebrow-blue" style="margin-bottom: 14px;">ROOMS</div>
+      <h2 style="font-size: 30px; color: #081D3A; font-weight: 600; margin-bottom: 30px;">Simple. Comfortable. Well Located.</h2>
+      </div>
+      <div class="swipe-row" style="display: flex; overflow-x: auto; gap: 24px; padding-bottom: 20px;">
+        <div class="swipe-card lift img-zoom" style="flex: 0 0 auto; width: min(78vw, 620px); border-radius: 8px; overflow: hidden; box-shadow: 0 16px 40px rgba(8,29,58,0.14); background: #EEF6FC;">
+          <img src="images/room1.jpg" alt="Standard room" style="width: 100%; height: 320px; object-fit: cover;">
+          <div style="padding: 22px 26px 26px;">
+            <h3 style="font-size: 21px; color: #081D3A; font-weight: 600;">Standard Room</h3>
+            <div style="font-size: 13px; color: #1670B9; margin-top: 6px; letter-spacing: 0.3px;">Spacious double bed &middot; Comfortable seating</div>
+            <p style="font-size: 14px; color: #4A5D6E; margin-top: 12px; line-height: 1.6;">Comfortable accommodation in Tantra Hills, Accra.</p>
+            <a class="nav-link" href="tel:0303973258" style="display: inline-block; margin-top: 14px; font-size: 13px; color: #081D3A; font-weight: 600;">Call About This Room &#8594;</a>
+          </div>
+        </div>
+        <div class="swipe-card lift" style="flex: 0 0 auto; width: min(78vw, 620px); border-radius: 8px; overflow: hidden; box-shadow: 0 10px 24px rgba(8,29,58,0.06); background: #EEF6FC; border: 1px dashed #B7CFE3;">
+          <div style="width: 100%; height: 320px; display: flex; align-items: center; justify-content: center; color: #9FB4C7;">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#9FB4C7" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 15l5-5 4 4 5-5 4 4"/></svg>
+          </div>
+          <div style="padding: 22px 26px 26px;">
+            <h3 style="font-size: 21px; color: #6E85A0; font-weight: 600;">[Add Another Room Type]</h3>
+            <div style="font-size: 13px; color: #9FB4C7; margin-top: 6px;">[Bed type &middot; capacity]</div>
+            <p style="font-size: 14px; color: #9FB4C7; margin-top: 12px; line-height: 1.6;">[Add description, photo and rate]</p>
+          </div>
+        </div>
+      </div>
+      <div style="font-size: 12px; color: #6E85A0; margin-top: 4px;">Swipe to see more &middot; more room types coming soon</div>
+    </div>
+</div>
+
+<div id="amenities" style="width: 100%; background: #EEF6FC; padding: 60px 28px;">
+    <div style="max-width: 1320px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 60px;">
+      <div style="flex: 1 1 320px;">
+        <div class="eyebrow eyebrow-blue" style="margin-bottom: 14px;">AMENITIES</div>
+        <div style="display: flex; flex-direction: column; gap: 14px;">
+          <div style="display: flex; align-items: center; gap: 12px;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1670B9" stroke-width="2.2"><path d="M20 6L9 17l-5-5"/></svg><span style="font-size: 14.5px; color: #0E2233;">Comfortable, well-maintained rooms</span></div>
+          <div style="display: flex; align-items: center; gap: 12px;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1670B9" stroke-width="2.2"><path d="M20 6L9 17l-5-5"/></svg><span style="font-size: 14.5px; color: #0E2233;">Convenient location</span></div>
+          <div style="display: flex; align-items: center; gap: 12px;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1670B9" stroke-width="2.2"><path d="M20 6L9 17l-5-5"/></svg><span style="font-size: 14.5px; color: #0E2233;">Complimentary Wi-Fi</span></div>
+          <div style="display: flex; align-items: center; gap: 12px;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1670B9" stroke-width="2.2"><path d="M20 6L9 17l-5-5"/></svg><span style="font-size: 14.5px; color: #0E2233;">Friendly, attentive service</span></div>
+        </div>
+        <div style="margin-top: 26px; padding: 20px; background: #FFFFFF; border: 1px dashed #B7CFE3; border-radius: 6px; max-width: 420px;">
+          <div style="font-size: 13px; font-weight: 700; color: #1670B9; letter-spacing: 0.5px; margin-bottom: 8px;">ROOMS &amp; RATES</div>
+          <div style="font-size: 14px; color: #4A5D6E; line-height: 1.6;">[Add nightly rates here]</div>
+        </div>
+      </div>
+      <div style="flex: 1 1 320px;">
+        <div class="eyebrow eyebrow-blue" style="margin-bottom: 14px;">WHO IT'S FOR</div>
+        <p style="font-size: 14.5px; color: #4A5D6E; line-height: 1.8;">Tantra Hills suits business and leisure travellers who want a practical, well-located base in Accra with easy access to Parliament Pub and the surrounding city — comfortable and convenient rather than a resort experience.</p>
+      </div>
+    </div>
+</div>
+
+<div id="gallery" style="max-width: 1320px; margin: 20px auto 0; padding: 60px 28px 20px;">
+    <div class="eyebrow eyebrow-blue" style="margin-bottom: 14px;">GALLERY</div>
+    <div class="grid-gallery" style="display: grid; grid-template-columns: 1.2fr 1fr; grid-template-rows: repeat(2, 1fr); gap: 16px; height: 460px;">
+      <div class="lift img-zoom" style="grid-row: span 2; position: relative; border-radius: 8px;">
+        <img src="images/exterior_courtyard.jpg" alt="Hotel entrance" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+        <div style="position: absolute; left: 12px; bottom: 12px; background: rgba(8,29,58,0.7); color: #FFFFFF; font-size: 12px; padding: 6px 12px; border-radius: 4px;">Hotel Entrance</div>
+      </div>
+      <div class="lift img-zoom" style="position: relative; border-radius: 8px;">
+        <img src="images/room1.jpg" alt="Guest room" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+        <div style="position: absolute; left: 12px; bottom: 12px; background: rgba(8,29,58,0.7); color: #FFFFFF; font-size: 12px; padding: 6px 12px; border-radius: 4px;">Guest Room</div>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; height: 100%;">
+        <div class="lift img-zoom" style="position: relative; border-radius: 8px;">
+          <img src="images/logo_board3.jpg" alt="The facade" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+          <div style="position: absolute; left: 8px; bottom: 8px; background: rgba(8,29,58,0.7); color: #FFFFFF; font-size: 11px; padding: 5px 10px; border-radius: 4px;">The Facade</div>
+        </div>
+        <div class="lift img-zoom" style="position: relative; border-radius: 8px;">
+          <img src="images/exterior_flags.jpg" alt="Our location" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+          <div style="position: absolute; left: 8px; bottom: 8px; background: rgba(8,29,58,0.7); color: #FFFFFF; font-size: 11px; padding: 5px 10px; border-radius: 4px;">Our Location</div>
+        </div>
+      </div>
+    </div>
+</div>
+
+<div id="location" style="max-width: 1320px; margin: 60px auto 0; padding: 36px 28px 90px; border-top: 1px solid #C7DCEC; display: flex; flex-wrap: wrap; gap: 40px;">
+    <div style="flex: 1 1 280px;">
+      <div style="font-size: 13px; font-weight: 700; color: #081D3A; letter-spacing: 0.5px; margin-bottom: 8px;">LOCATION</div>
+      <div style="font-size: 15px; color: #4A5D6E; line-height: 1.6;">Tantra Hills, near Parliament Pub<br>Accra, Ghana<br><span style="color: #9FB4C7; font-size: 13px;">(Digital address approx. HQHC+G5W, Tantra St, Accra)</span></div>
+    </div>
+    <div id="contact-block" style="flex: 1 1 280px;">
+      <div style="font-size: 13px; font-weight: 700; color: #081D3A; letter-spacing: 0.5px; margin-bottom: 8px;">RESERVATIONS</div>
+      <div style="font-size: 15px; color: #4A5D6E; line-height: 1.6;"><a href="tel:0303973258" style="border-bottom: 1px solid #C7DCEC;">0303 973 258</a><br><a href="tel:0249201906" style="border-bottom: 1px solid #C7DCEC;">0249 201 906</a></div>
+    </div>
+</div>
+
+<div style="width: 100%; background: #1670B9; padding: 60px 28px; text-align: center;">
+    <div style="max-width: 560px; margin: 0 auto;">
+      <h3 style="font-size: 26px; color: #FFFFFF; font-weight: 600;">Ready to book your stay?</h3>
+      <p style="font-size: 14px; color: #D9EAF6; margin-top: 10px;">Call us directly — our team is ready to help.</p>
+      <a class="btn btn-gold" href="tel:0303973258" style="margin-top: 22px;">Call 0303 973 258</a>
+    </div>
+</div>
+
+
+<footer style="width: 100%; background: #081D3A; padding: 64px 28px 40px; color: #FFFFFF;">
+    <div style="max-width: 1320px; margin: 0 auto;">
+      <div style="display: flex; flex-wrap: wrap; gap: 48px; justify-content: space-between;">
+        <div style="flex: 1 1 260px;">
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <img src="images/logo-icon.png" alt="Hotel Alexandria mark" style="width: 30px; height: auto; display: block;">
+            <span style="font-family: 'Fraunces', serif; font-weight: 700; font-size: 19px;">HOTEL ALEXANDRIA</span>
+          </div>
+          <p style="font-size: 13px; color: #9FB4C7; margin-top: 6px; letter-spacing: 1px;">ACCRA &middot; GHANA</p>
+          <p style="font-size: 14px; color: #A9BBCB; line-height: 1.6; margin-top: 14px; max-width: 260px;">One name. A new chapter.</p>
+        </div>
+        <div style="flex: 1 1 220px;">
+          <div style="font-size: 13px; font-weight: 700; color: #C59A52; letter-spacing: 0.5px; margin-bottom: 10px;">HOTELS</div>
+          <div style="font-size: 14px; color: #D9EAF6; line-height: 1.9; display: flex; flex-direction: column;">
+            <a class="nav-link" href="tantra-hills.html" style="align-self: flex-start;">Tantra Hills — Open Now</a>
+            <a class="nav-link" href="klagon-hills.html" style="align-self: flex-start;">Klagon Hills — Opening October 2027</a>
+          </div>
+        </div>
+        <div style="flex: 1 1 220px;">
+          <div style="font-size: 13px; font-weight: 700; color: #C59A52; letter-spacing: 0.5px; margin-bottom: 10px;">EXPLORE</div>
+          <div style="font-size: 14px; color: #D9EAF6; line-height: 1.9; display: flex; flex-direction: column;">
+            <a class="nav-link" href="index.html#experiences" style="align-self: flex-start;">Experiences</a>
+            <a class="nav-link" href="klagon-hills.html#meetings" style="align-self: flex-start;">Meetings &amp; Events</a>
+            <a class="nav-link" href="our-story.html" style="align-self: flex-start;">Our Story</a>
+            <a class="nav-link" href="contact.html" style="align-self: flex-start;">Contact</a>
+          </div>
+        </div>
+        <div style="flex: 1 1 220px;">
+          <div style="font-size: 13px; font-weight: 700; color: #C59A52; letter-spacing: 0.5px; margin-bottom: 10px;">RESERVATIONS</div>
+          <div style="font-size: 14px; color: #D9EAF6; line-height: 1.9;">
+            <a class="nav-link" href="tel:0303973258" style="display: block;">0303 973 258</a>
+            <a class="nav-link" href="tel:0249201906" style="display: block;">0249 201 906</a>
+          </div>
+        </div>
+      </div>
+      <div style="border-top: 1px solid rgba(255,255,255,0.12); margin-top: 44px; padding-top: 22px; font-size: 12px; color: #6E85A0;">&copy; 2026 Hotel Alexandria, Ghana. All rights reserved.</div>
+    </div>
+  </footer>
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>
