@@ -48,14 +48,15 @@ function updateJourneySlider(val) {
   if (divider) { divider.style.left = val + '%'; }
 }
 
-/* ===== Scroll-linked cinematic reveals =====
-   1) .reveal elements fade/rise into place the first time they enter the
-      viewport (IntersectionObserver, fires once per element).
-   2) .hero-mask heroes get a true scroll-position-driven "opening" effect —
-      the image starts letterboxed and slightly oversized, and unmasks to
-      full frame as the user scrolls the hero out of view.
-   Both respect prefers-reduced-motion by skipping the animated states
-   entirely and showing final content immediately. */
+/* ===== Cinematic reveals =====
+   .reveal elements fade/rise into place the first time they enter the
+   viewport (IntersectionObserver, fires once per element). Respects
+   prefers-reduced-motion by skipping the animated state entirely and
+   showing final content immediately.
+   .hero-mask heroes get a one-time "opening" animation on page load
+   (defined in CSS as @keyframes) — the image starts letterboxed and
+   slightly oversized, and unmasks to full frame within view, so the
+   complete hero is always visible without needing to scroll. */
 (function () {
   var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
@@ -74,40 +75,5 @@ function updateJourneySlider(val) {
       }, { threshold: 0.15, rootMargin: '0px 0px -8% 0px' });
       revealEls.forEach(function (el) { io.observe(el); });
     }
-  }
-
-  var maskHero = document.querySelector('.hero-mask');
-  if (maskHero && !reduceMotion) {
-    var img = maskHero.querySelector('.hero-bg');
-    var content = maskHero.querySelector('.hero-content');
-    var heroHeight = maskHero.offsetHeight || window.innerHeight;
-    var ticking = false;
-
-    var update = function () {
-      var progress = Math.min(Math.max(window.scrollY / heroHeight, 0), 1);
-      var band = 36 * (1 - progress); /* percent hidden top+bottom at scroll top */
-      if (img) {
-        img.style.clipPath = 'inset(' + band + '% 0 ' + band + '% 0)';
-        img.style.transform = 'scale(' + (1.14 - 0.14 * progress) + ')';
-      }
-      if (content) {
-        content.style.opacity = String(Math.min(1, progress * 2.4));
-        content.style.transform = 'translateY(' + (22 * (1 - progress)) + 'px)';
-      }
-      ticking = false;
-    };
-
-    update();
-    window.addEventListener('scroll', function () {
-      if (!ticking) { window.requestAnimationFrame(update); ticking = true; }
-    }, { passive: true });
-    window.addEventListener('resize', function () {
-      heroHeight = maskHero.offsetHeight || window.innerHeight;
-      update();
-    });
-  } else if (maskHero) {
-    /* reduced motion: show the hero fully formed, no mask */
-    var imgRM = maskHero.querySelector('.hero-bg');
-    if (imgRM) { imgRM.style.clipPath = 'none'; imgRM.style.transform = 'none'; }
   }
 })();
