@@ -127,14 +127,35 @@
     </div>
   </div>
   <div class="hero-wave" aria-hidden="true">
-    <svg viewBox="0 0 1440 190" preserveAspectRatio="none">
-      <path d="M0,100 C360,40 1080,150 1440,90 L1440,190 L0,190 Z" fill="#D9EAF6" opacity="0.16"></path>
-      <path d="M0,125 C420,65 1020,175 1440,110 L1440,190 L0,190 Z" fill="#2C82C9" opacity="0.55"></path>
-      <path d="M0,140 C480,70 960,190 1440,130 L1440,190 L0,190 Z" fill="#1670B9"></path>
-      <line x1="1080" y1="0" x2="1320" y2="190" stroke="#C89B45" stroke-width="1" opacity="0.22"></line>
-      <line x1="1200" y1="0" x2="1440" y2="190" stroke="#C89B45" stroke-width="1" opacity="0.14"></line>
-      <path d="M0,125 C420,65 1020,175 1440,110" fill="none" stroke="#C89B45" stroke-width="1.5" opacity="0.4"></path>
-      <path d="M0,100 C360,40 1080,150 1440,90" fill="none" stroke="#C89B45" stroke-width="2" opacity="0.85"></path>
+    <svg viewBox="0 0 1440 260" preserveAspectRatio="none">
+      <defs>
+        <linearGradient id="waveBack" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#6BC0F5"></stop>
+          <stop offset="100%" stop-color="#1670B9"></stop>
+        </linearGradient>
+        <linearGradient id="waveMid" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#2C82C9"></stop>
+          <stop offset="100%" stop-color="#0E4A82"></stop>
+        </linearGradient>
+        <linearGradient id="waveFront" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#1670B9"></stop>
+          <stop offset="100%" stop-color="#083861"></stop>
+        </linearGradient>
+        <filter id="goldGlow" x="-20%" y="-300%" width="140%" height="700%">
+          <feGaussianBlur stdDeviation="4.5" result="blur"></feGaussianBlur>
+          <feMerge>
+            <feMergeNode in="blur"></feMergeNode>
+            <feMergeNode in="SourceGraphic"></feMergeNode>
+          </feMerge>
+        </filter>
+      </defs>
+      <path d="M0,130 C360,10 1080,230 1440,110 L1440,260 L0,260 Z" fill="url(#waveBack)" opacity="0.6"></path>
+      <path d="M0,175 C420,55 1020,245 1440,155 L1440,260 L0,260 Z" fill="url(#waveMid)" opacity="0.85"></path>
+      <path d="M0,205 C480,85 960,260 1440,185 L1440,260 L0,260 Z" fill="url(#waveFront)"></path>
+      <line x1="1020" y1="0" x2="1300" y2="260" stroke="#C89B45" stroke-width="1.25" opacity="0.28"></line>
+      <line x1="1160" y1="0" x2="1440" y2="260" stroke="#C89B45" stroke-width="1.25" opacity="0.18"></line>
+      <path d="M0,175 C420,55 1020,245 1440,155" fill="none" stroke="#C89B45" stroke-width="1.75" opacity="0.55"></path>
+      <path d="M0,130 C360,10 1080,230 1440,110" fill="none" stroke="#F4D28A" stroke-width="3.5" opacity="0.95" filter="url(#goldGlow)"></path>
     </svg>
   </div>
 </div>
