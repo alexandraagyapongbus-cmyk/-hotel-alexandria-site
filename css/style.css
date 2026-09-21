@@ -3,12 +3,13 @@
 /* ===== Hotel Alexandria brand tokens ===== */
 :root {
   --blue: #1670B9;        /* Alexandria Blue — PRIMARY */
-  --blue-dark: #115A94;
-  --navy: #081D3A;        /* Deep Alexandria Navy — secondary */
+  --blue-dark: #105A9B;
+  --navy: #08264A;        /* Deep Alexandria Navy — secondary */
   --mist: #D9EAF6;        /* light blue mist */
-  --mist-soft: #EEF6FC;
+  --mist-soft: #EAF4FA;
   --white: #FFFFFF;
-  --gold: #C59A52;        /* restrained accent only */
+  --white-soft: #F7FAFC;
+  --gold: #C89B45;        /* restrained accent only */
   --ink: #0E2233;         /* body text on light backgrounds */
   --ink-soft: #4A5D6E;
   --line: #C7DCEC;        /* hairline on light backgrounds */
@@ -31,8 +32,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visibl
 }
 
 @keyframes settleIn { 0% { transform: scale(1.05); opacity: 0.85; } 100% { transform: scale(1); opacity: 1; } }
-@keyframes pulseGlow { 0%, 100% { box-shadow: 0 0 0 rgba(197,154,82,0); } 50% { box-shadow: 0 0 24px rgba(197,154,82,0.5); } }
-@keyframes dotPing { 0% { box-shadow: 0 0 0 0 rgba(197,154,82,0.5); } 100% { box-shadow: 0 0 0 14px rgba(197,154,82,0); } }
+@keyframes pulseGlow { 0%, 100% { box-shadow: 0 0 0 rgba(200,155,69,0); } 50% { box-shadow: 0 0 24px rgba(200,155,69,0.5); } }
+@keyframes dotPing { 0% { box-shadow: 0 0 0 0 rgba(200,155,69,0.5); } 100% { box-shadow: 0 0 0 14px rgba(200,155,69,0); } }
 
 .eyebrow { font-size: 12px; letter-spacing: 3px; font-weight: 700; text-transform: uppercase; }
 .eyebrow-gold { color: var(--gold); }
@@ -46,7 +47,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visibl
 .btn-primary { background: var(--blue); color: var(--white); }
 .btn-primary:hover { background: var(--blue-dark); transform: translateY(-2px); box-shadow: 0 14px 28px rgba(22,112,185,0.3); }
 .btn-gold { background: var(--gold); color: var(--navy); }
-.btn-gold:hover { background: #B08A45; transform: translateY(-2px); box-shadow: 0 14px 28px rgba(197,154,82,0.35); }
+.btn-gold:hover { background: #B38A3E; transform: translateY(-2px); box-shadow: 0 14px 28px rgba(200,155,69,0.35); }
 .btn-line { background: transparent; color: var(--white); border: 1px solid rgba(255,255,255,0.55); }
 .btn-line:hover { border-color: var(--gold); color: var(--gold); }
 .btn-line-dark { background: transparent; color: var(--navy); border: 1px solid var(--navy); }
@@ -86,13 +87,13 @@ a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visibl
 .hotels-menu summary { list-style: none; cursor: pointer; font-size: 14px; font-weight: 500; display: flex; align-items: center; gap: 5px; }
 .hotels-menu summary::-webkit-details-marker { display: none; }
 .hotels-menu summary::after { content: '\25BE'; font-size: 10px; margin-left: 2px; }
-.mega-panel { position: absolute; top: calc(100% + 18px); left: 50%; transform: translateX(-50%); width: 620px; max-width: 90vw; background: var(--white); border-radius: 6px; box-shadow: 0 30px 60px rgba(8,29,58,0.22); padding: 26px; display: flex; flex-direction: column; gap: 18px; z-index: 60; }
+.mega-panel { position: absolute; top: calc(100% + 18px); left: 50%; transform: translateX(-50%); width: 620px; max-width: 90vw; background: var(--navy); border-radius: 6px; box-shadow: 0 30px 60px rgba(8,38,74,0.35); padding: 26px; display: flex; flex-direction: column; gap: 18px; z-index: 60; }
 .mega-panel-head { font-size: 12px; letter-spacing: 1.5px; color: var(--blue); font-weight: 700; }
-.mega-panel-sub { font-family: 'Fraunces', serif; font-style: italic; font-size: 16px; color: var(--navy); margin-top: 4px; }
+.mega-panel-sub { font-family: 'Fraunces', serif; font-style: italic; font-size: 16px; color: var(--white); margin-top: 4px; }
 .mega-cards { display: flex; gap: 16px; margin-top: 6px; }
 .mega-card { flex: 1; position: relative; border-radius: 6px; overflow: hidden; min-height: 190px; display: flex; align-items: flex-end; color: var(--white); }
 .mega-card img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
-.mega-card .scrim { position: absolute; inset: 0; background: linear-gradient(0deg, rgba(8,29,58,0.88) 0%, rgba(8,29,58,0.25) 75%); }
+.mega-card .scrim { position: absolute; inset: 0; background: linear-gradient(0deg, rgba(8,38,74,0.88) 0%, rgba(8,38,74,0.25) 75%); }
 .mega-card .mega-card-body { position: relative; padding: 16px; }
 .mega-card.klagon-card { flex: 1.2; }
 
@@ -103,7 +104,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visibl
 .hamburger { display: none; background: none; border: none; cursor: pointer; padding: 6px; }
 .hamburger span { display: block; width: 22px; height: 2px; background: var(--navy); margin: 5px 0; transition: all 0.3s ease; }
 #site-header.transparent-nav .hamburger span { background: var(--white); }
-#mobile-nav { display: none; position: fixed; inset: 0; z-index: 100; background: var(--navy); color: var(--white); padding: 24px; overflow-y: auto; }
+#mobile-nav { display: none; position: fixed; inset: 0; z-index: 100; background: linear-gradient(165deg, var(--blue) 0%, var(--navy) 60%); color: var(--white); padding: 24px; overflow-y: auto; }
 #mobile-nav.open { display: block; }
 #mobile-nav a { display: block; font-size: 17px; padding: 14px 0; border-bottom: 1px solid rgba(255,255,255,0.12); }
 #mobile-nav .sub-link { padding-left: 18px; font-size: 15px; color: var(--mist); }
@@ -124,7 +125,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visibl
 .hero-full { position: relative; width: 100%; min-height: 100vh; display: flex; align-items: center; overflow: hidden; }
 .hero-full img.hero-bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1; }
 .hero-scrim { position: absolute; inset: 0; z-index: 2; }
-.hero-scrim-navy { background: linear-gradient(180deg, rgba(8,29,58,0.55) 0%, rgba(8,29,58,0.62) 50%, rgba(8,29,58,0.85) 100%); }
+.hero-scrim-navy { background: linear-gradient(180deg, rgba(8,38,74,0.55) 0%, rgba(8,38,74,0.62) 50%, rgba(8,38,74,0.85) 100%); }
 .hero-content { position: relative; z-index: 3; max-width: 1320px; margin: 0 auto; padding: 0 28px; width: 100%; }
 
 .bg-parallax { background-attachment: fixed; background-size: cover; background-position: center; }
@@ -134,7 +135,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visibl
 
 .full-bleed-band { position: relative; width: 100%; min-height: 62vh; display: flex; align-items: center; overflow: hidden; color: var(--white); }
 .full-bleed-band img.band-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1; }
-.band-scrim { position: absolute; inset: 0; z-index: 2; background: linear-gradient(90deg, rgba(8,29,58,0.82) 0%, rgba(8,29,58,0.35) 60%, rgba(8,29,58,0.1) 100%); }
+.band-scrim { position: absolute; inset: 0; z-index: 2; background: linear-gradient(90deg, rgba(8,38,74,0.82) 0%, rgba(8,38,74,0.35) 60%, rgba(8,38,74,0.1) 100%); }
 .band-content { position: relative; z-index: 3; max-width: 1320px; margin: 0 auto; padding: 60px 28px; width: 100%; }
 
 /* Category row (Stay / Dine / Wellness / Meet / Celebrate / Experience) */
@@ -184,6 +185,6 @@ a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visibl
   .hero-mask .hero-bg, .hero-mask .hero-content { animation: none; opacity: 1; }
 }
 
-input[type="range"].alex-slider { -webkit-appearance: none; width: 100%; height: 3px; background: rgba(8,29,58,0.2); border-radius: 4px; outline: none; }
+input[type="range"].alex-slider { -webkit-appearance: none; width: 100%; height: 3px; background: rgba(8,38,74,0.2); border-radius: 4px; outline: none; }
 input[type="range"].alex-slider::-webkit-slider-thumb { -webkit-appearance: none; width: 20px; height: 20px; border-radius: 50%; background: var(--gold); border: 3px solid var(--white); box-shadow: 0 2px 8px rgba(0,0,0,0.3); cursor: pointer; }
 input[type="range"].alex-slider::-moz-range-thumb { width: 20px; height: 20px; border-radius: 50%; background: var(--gold); border: 3px solid var(--white); box-shadow: 0 2px 8px rgba(0,0,0,0.3); cursor: pointer; }
