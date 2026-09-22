@@ -113,9 +113,9 @@
 </div>
 
 <!-- A. FULL-SCREEN KLAGON-LED HERO (scroll-linked cinematic reveal) -->
-<div class="hero-full hero-mask">
-  <img class="hero-bg" src="images/klagon-photoreal.jpg" alt="Hotel Alexandria, Klagon Hills — evening concept view">
-  <div class="hero-scrim hero-scrim-navy"></div>
+<div class="hero-full hero-mask" style="min-height: 90vh;">
+  <img class="hero-bg" src="images/klagon-photoreal.jpg" alt="Hotel Alexandria, Klagon Hills — evening concept view" style="object-position: center 42%;">
+  <div class="hero-scrim" style="background: linear-gradient(180deg, rgba(8,38,74,0.4) 0%, rgba(8,38,74,0.32) 45%, rgba(8,38,74,0.6) 100%);"></div>
   <div class="hero-content">
     <div class="eyebrow eyebrow-gold" style="margin-bottom: 18px;">HOTEL ALEXANDRIA &middot; ACCRA, GHANA</div>
     <h1 style="font-size: clamp(40px, 6vw, 68px); color: #FFFFFF; line-height: 1.05; max-width: 780px;">A New Landmark in Accra.</h1>
@@ -127,7 +127,7 @@
     </div>
   </div>
   <div class="hero-wave" aria-hidden="true">
-    <svg viewBox="0 0 1440 260" preserveAspectRatio="none">
+    <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
       <defs>
         <linearGradient id="waveBack" x1="0" y1="0" x2="1" y2="1">
           <stop offset="0%" stop-color="#6BC0F5"></stop>
@@ -138,29 +138,29 @@
           <stop offset="100%" stop-color="#105A9B"></stop>
         </linearGradient>
         <filter id="goldGlow" x="-20%" y="-300%" width="140%" height="700%">
-          <feGaussianBlur stdDeviation="4.5" result="blur"></feGaussianBlur>
+          <feGaussianBlur stdDeviation="2" result="blur"></feGaussianBlur>
           <feMerge>
             <feMergeNode in="blur"></feMergeNode>
             <feMergeNode in="SourceGraphic"></feMergeNode>
           </feMerge>
         </filter>
       </defs>
-      <path d="M0,130 C360,10 1080,230 1440,110 L1440,260 L0,260 Z" fill="url(#waveBack)" opacity="0.6"></path>
-      <path d="M0,175 C420,55 1020,245 1440,155 L1440,260 L0,260 Z" fill="url(#waveMid)" opacity="0.85"></path>
-      <path d="M0,205 C480,85 960,260 1440,185 L1440,260 L0,260 Z" fill="#1670B9"></path>
-      <line x1="1020" y1="0" x2="1300" y2="260" stroke="#C89B45" stroke-width="1.25" opacity="0.28"></line>
-      <line x1="1160" y1="0" x2="1440" y2="260" stroke="#C89B45" stroke-width="1.25" opacity="0.18"></line>
-      <path d="M0,175 C420,55 1020,245 1440,155" fill="none" stroke="#C89B45" stroke-width="1.75" opacity="0.55"></path>
-      <path d="M0,130 C360,10 1080,230 1440,110" fill="none" stroke="#F4D28A" stroke-width="3.5" opacity="0.95" filter="url(#goldGlow)"></path>
+      <path d="M0,50 C360,4 1080,88 1440,42 L1440,100 L0,100 Z" fill="url(#waveBack)" opacity="0.6"></path>
+      <path d="M0,67 C420,21 1020,94 1440,60 L1440,100 L0,100 Z" fill="url(#waveMid)" opacity="0.85"></path>
+      <path d="M0,79 C480,33 960,100 1440,71 L1440,100 L0,100 Z" fill="#1670B9"></path>
+      <line x1="1020" y1="0" x2="1300" y2="100" stroke="#C89B45" stroke-width="1" opacity="0.28"></line>
+      <line x1="1160" y1="0" x2="1440" y2="100" stroke="#C89B45" stroke-width="1" opacity="0.18"></line>
+      <path d="M0,67 C420,21 1020,94 1440,60" fill="none" stroke="#C89B45" stroke-width="1.25" opacity="0.55"></path>
+      <path d="M0,50 C360,4 1080,88 1440,42" fill="none" stroke="#F4D28A" stroke-width="2" opacity="0.95" filter="url(#goldGlow)"></path>
     </svg>
   </div>
 </div>
 
 <!-- B. MADE FOR MORE THAN STAYING -->
-<div id="experiences" style="width: 100%; background: linear-gradient(135deg, #1670B9 0%, #105A9B 100%); padding: 90px 28px 70px; text-align: center;">
+<div id="experiences" style="width: 100%; background: linear-gradient(135deg, #1670B9 0%, #105A9B 100%); padding: 96px 28px; text-align: center;">
   <div class="reveal">
     <div class="eyebrow eyebrow-gold">MADE FOR MORE THAN STAYING</div>
-    <h2 style="font-size: clamp(26px, 3vw, 34px); color: #FFFFFF; margin-top: 14px; max-width: 640px; margin-left: auto; margin-right: auto;">A full Hotel Alexandria experience, built around Klagon Hills.</h2>
+    <h2 class="h2-section" style="color: #FFFFFF; margin-top: 14px; max-width: 640px; margin-left: auto; margin-right: auto;">A full Hotel Alexandria experience, built around Klagon Hills.</h2>
   </div>
   <div class="category-row reveal reveal-delay-1" style="max-width: 1100px; margin: 50px auto 0;">
     <div class="category-item"><div style="font-size: 13px; letter-spacing: 1.5px; color: #FFFFFF; font-weight: 600;">STAY</div><div class="cat-line"></div></div>
@@ -173,14 +173,14 @@
 </div>
 
 <!-- C. SIGNATURE STAYS -->
-<div style="width: 100%; background: #EAF4FA; padding: 90px 28px;">
+<div style="width: 100%; background: #EAF4FA; padding: 96px 28px;">
   <div class="luxury-card reveal">
     <div class="luxury-card-media">
       <img src="images/suite-luxury.jpg" alt="Klagon Hills, signature suite interior">
     </div>
     <div class="luxury-card-panel" style="background: #08264A;">
       <div class="eyebrow eyebrow-gold">SIGNATURE STAYS &middot; KLAGON HILLS</div>
-      <h2 style="font-size: clamp(28px, 3.4vw, 40px); color: #FFFFFF; margin-top: 14px;">Space to be yourself.</h2>
+      <h2 class="h2-card" style="color: #FFFFFF; margin-top: 14px;">Space to be yourself.</h2>
       <p style="font-size: 15px; color: #D9EAF6; margin-top: 16px; line-height: 1.7;">Rooms and suites designed for comfort, work and rest — arriving with the flagship in October 2027.</p>
       <a class="btn btn-gold" href="klagon-hills.html#stay" style="margin-top: 26px; align-self: flex-start;">Explore Rooms <span class="btn-arrow">&#8594;</span></a>
     </div>
@@ -188,11 +188,11 @@
 </div>
 
 <!-- D. MEETINGS & CELEBRATIONS -->
-<div style="width: 100%; background: linear-gradient(135deg, #1670B9 0%, #105A9B 100%); padding: 90px 28px;">
+<div style="width: 100%; background: linear-gradient(135deg, #1670B9 0%, #105A9B 100%); padding: 96px 28px;">
   <div class="luxury-card reveal">
     <div class="luxury-card-panel" style="background: #08264A;">
       <div class="eyebrow eyebrow-gold">MEETINGS &amp; CELEBRATIONS</div>
-      <h2 style="font-size: clamp(28px, 3.4vw, 40px); color: #FFFFFF; margin-top: 14px;">Extraordinary moments.</h2>
+      <h2 class="h2-card" style="color: #FFFFFF; margin-top: 14px;">Extraordinary moments.</h2>
       <p style="font-size: 15px; color: #D9EAF6; margin-top: 16px; line-height: 1.7;">Two conference rooms accommodating up to 300 guests each, plus an event centre for up to 500 — built for business gatherings, weddings and social celebrations.</p>
       <a class="btn btn-gold" href="klagon-hills.html#meetings" style="margin-top: 26px; align-self: flex-start;">Plan Your Event <span class="btn-arrow">&#8594;</span></a>
     </div>
@@ -203,14 +203,14 @@
 </div>
 
 <!-- E. WELLNESS -->
-<div style="width: 100%; background: #FFFFFF; padding: 90px 28px;">
+<div style="width: 100%; background: #FFFFFF; padding: 96px 28px;">
   <div class="luxury-card reveal">
     <div class="luxury-card-media">
       <img src="images/rooftop-pool.jpg" alt="Klagon Hills, rooftop pool and lounge at sunset">
     </div>
     <div class="luxury-card-panel" style="background: #1670B9;">
       <div class="eyebrow eyebrow-gold">WELLNESS &amp; LEISURE</div>
-      <h2 style="font-size: clamp(28px, 3.4vw, 40px); color: #FFFFFF; margin-top: 14px;">Refresh. Rebalance.</h2>
+      <h2 class="h2-card" style="color: #FFFFFF; margin-top: 14px;">Refresh. Rebalance.</h2>
       <p style="font-size: 15px; color: #D9EAF6; margin-top: 16px; line-height: 1.7;">Pool, gym and spa spaces designed to help guests feel their best — part of the Klagon Hills flagship.</p>
       <a class="btn btn-line" href="klagon-hills.html#wellness" style="margin-top: 24px; align-self: flex-start;">Explore Wellness <span class="btn-arrow">&#8594;</span></a>
     </div>
@@ -218,15 +218,15 @@
 </div>
 
 <!-- F. THE HOTEL ALEXANDRIA STORY -->
-<div style="width: 100%; background: #EAF4FA; padding: 100px 28px;">
+<div style="width: 100%; background: #EAF4FA; padding: 96px 28px;">
   <div style="max-width: 1000px; margin: 0 auto; text-align: center;">
     <div class="reveal">
     <div class="eyebrow eyebrow-blue">ONE NAME. A NEW CHAPTER.</div>
-    <h2 style="font-size: clamp(26px, 3vw, 34px); color: #08264A; margin-top: 14px;">Where our story began. Where we're going.</h2>
+    <h2 class="h2-section" style="color: #08264A; margin-top: 14px;">Where our story began. Where we're going.</h2>
     </div>
     <div class="story-timeline" style="margin-top: 56px;">
       <div class="story-node reveal">
-        <div class="lift img-zoom" style="border-radius: 6px; overflow: hidden; max-width: 340px; margin: 0 auto; box-shadow: 0 20px 40px rgba(8,38,74,0.15);">
+        <div class="lift img-zoom" style="border-radius: 16px; overflow: hidden; max-width: 340px; margin: 0 auto; box-shadow: 0 24px 48px rgba(8,38,74,0.2);">
           <img src="images/exterior_flags.jpg" alt="Tantra Hills, 2019">
         </div>
         <div style="font-family: 'Fraunces', serif; font-size: 28px; color: #08264A; font-weight: 700; margin-top: 18px;">2019</div>
@@ -235,7 +235,7 @@
       </div>
       <div class="story-connector" style="display: none;"></div>
       <div class="story-node reveal reveal-delay-1">
-        <div class="lift img-zoom" style="border-radius: 6px; overflow: hidden; max-width: 340px; margin: 0 auto; box-shadow: 0 20px 40px rgba(8,38,74,0.15);">
+        <div class="lift img-zoom" style="border-radius: 16px; overflow: hidden; max-width: 340px; margin: 0 auto; box-shadow: 0 24px 48px rgba(8,38,74,0.2);">
           <img src="images/klagon-photoreal.jpg" alt="Klagon Hills, 2027 concept view">
         </div>
         <div style="font-family: 'Fraunces', serif; font-size: 28px; color: #08264A; font-weight: 700; margin-top: 18px;">2027</div>
@@ -248,10 +248,11 @@
 </div>
 
 <!-- G. TWO ALEXANDRIA EXPERIENCES (reinvented hover interaction) -->
-<div style="width: 100%; background: #1670B9; padding: 70px 0 0; text-align: center;">
+<div style="width: 100%; background: #1670B9; padding: 96px 0 0; text-align: center; position: relative; overflow: hidden;">
+  <div class="geo-line" style="top: 30px; left: 6%; transform: rotate(-30deg);"></div>
   <div class="reveal">
   <div class="eyebrow eyebrow-gold">TWO ALEXANDRIA EXPERIENCES</div>
-  <h2 style="font-size: clamp(24px, 3vw, 30px); color: #FFFFFF; margin-top: 12px;">One vision, two very different stays.</h2>
+  <h2 class="h2-section" style="color: #FFFFFF; margin-top: 12px;">One vision, two very different stays.</h2>
   <p style="font-size: 13px; color: #D9EAF6; margin-top: 10px;">Hover or focus either side to explore &middot; tap on mobile</p>
   </div>
 </div>
@@ -262,7 +263,7 @@
     <div style="position: relative; z-index: 3; padding: 48px 40px;">
       <div class="eyebrow eyebrow-gold" style="margin-bottom: 6px;">TANTRA HILLS</div>
       <div style="font-size: 11px; letter-spacing: 1.5px; color: #FFFFFF; font-weight: 600; padding-bottom: 8px; border-bottom: 1px solid rgba(255,255,255,0.5); display: inline-block; margin-bottom: 16px;">OPEN NOW</div>
-      <h3 style="font-size: 26px; color: #FFFFFF; font-weight: 600;">The original Alexandria</h3>
+      <h3 class="h3-panel" style="color: #FFFFFF; font-weight: 600;">The original Alexandria</h3>
       <p style="font-size: 13.5px; color: #D9EAF6; margin-top: 10px; max-width: 320px; line-height: 1.55;">Comfortable, convenient, genuinely Ghanaian hospitality — open today in Accra.</p>
       <a class="btn btn-line" href="tantra-hills.html" style="margin-top: 20px; padding: 11px 22px; font-size: 11px;">Explore &amp; Book <span class="btn-arrow">&#8594;</span></a>
     </div>
@@ -273,7 +274,7 @@
     <div style="position: relative; z-index: 3; padding: 48px 40px;">
       <div class="eyebrow eyebrow-gold" style="margin-bottom: 6px;">KLAGON HILLS</div>
       <div style="font-size: 11px; letter-spacing: 1.5px; color: #FFFFFF; font-weight: 600; padding-bottom: 8px; border-bottom: 1px solid #C89B45; display: inline-block; margin-bottom: 16px;">OPENING OCTOBER 2027</div>
-      <h3 style="font-size: 30px; color: #FFFFFF; font-weight: 600;">The new five-star flagship</h3>
+      <h3 class="h3-panel" style="color: #FFFFFF; font-weight: 600;">The new five-star flagship</h3>
       <p style="font-size: 14px; color: #D9EAF6; margin-top: 10px; max-width: 380px; line-height: 1.6;">A landmark hotel bringing elevated hospitality, dining, wellness and events to Accra.</p>
       <a class="btn btn-gold" href="klagon-hills.html" style="margin-top: 20px;">Discover Klagon Hills <span class="btn-arrow">&#8594;</span></a>
     </div>
@@ -281,17 +282,19 @@
 </div>
 
 <!-- H. OPENING / FOLLOW THE JOURNEY -->
-<div id="progress" style="width: 100%; background: linear-gradient(160deg, #1670B9 0%, #08264A 75%); padding: 80px 28px; text-align: center; border-top: 1px solid rgba(255,255,255,0.08);">
+<div id="progress" style="width: 100%; background: linear-gradient(160deg, #1670B9 0%, #08264A 75%); padding: 96px 28px; text-align: center; border-top: 1px solid rgba(255,255,255,0.08); position: relative; overflow: hidden;">
+  <div class="geo-line" style="bottom: 20px; right: 4%; transform: rotate(-30deg);"></div>
   <div class="reveal">
   <div class="eyebrow eyebrow-gold">OPENING OCTOBER 2027</div>
-  <h2 style="font-size: clamp(24px, 3vw, 30px); color: #FFFFFF; margin-top: 12px;">Follow the journey to Klagon Hills.</h2>
-  <p style="font-size: 14px; color: #D9EAF6; margin-top: 12px; max-width: 460px; margin-left: auto; margin-right: auto;">Design and planning are underway. Track progress and be first to know when Klagon Hills opens.</p>
+  <h2 class="h2-section" style="color: #FFFFFF; margin-top: 12px;">Follow the journey to Klagon Hills.</h2>
+  <p style="font-size: 14px; color: #D9EAF6; margin-top: 12px; max-width: 460px; margin-left: auto; margin-right: auto; line-height: 1.7;">Design and planning are underway. Track progress and be first to know when Klagon Hills opens.</p>
   <a class="btn btn-gold" href="klagon-hills.html#progress" style="margin-top: 26px;">See the Full Journey <span class="btn-arrow">&#8594;</span></a>
   </div>
 </div>
 
 
-<footer style="width: 100%; background: #08264A; padding: 64px 28px 40px; color: #FFFFFF;">
+<footer style="width: 100%; background: #08264A; padding: 64px 28px 40px; color: #FFFFFF; position: relative; overflow: hidden;">
+    <div class="geo-line" style="top: -10px; left: 20%; transform: rotate(-30deg);"></div>
     <div style="max-width: 1320px; margin: 0 auto;">
       <div style="display: flex; flex-wrap: wrap; gap: 48px; justify-content: space-between;">
         <div style="flex: 1 1 260px;">

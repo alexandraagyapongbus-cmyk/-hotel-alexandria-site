@@ -39,6 +39,14 @@ a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visibl
 .eyebrow-gold { color: var(--gold); }
 .eyebrow-blue { color: var(--blue); }
 
+/* Shared type scale — keeps section/card/panel headings consistent site-wide */
+.h2-section { font-size: clamp(28px, 3.2vw, 38px); }
+.h2-card { font-size: clamp(24px, 2.6vw, 32px); }
+.h3-panel { font-size: clamp(24px, 2.4vw, 30px); }
+
+/* Recurring geometric line accent — thin diagonal gold thread, echoes the hero wave motif */
+.geo-line { position: absolute; width: 220px; height: 1px; background: linear-gradient(90deg, transparent, var(--gold) 50%, transparent); opacity: 0.3; pointer-events: none; }
+
 .nav-link { position: relative; padding-bottom: 4px; }
 .nav-link::after { content: ''; position: absolute; left: 0; bottom: 0; width: 0%; height: 1.5px; background: var(--gold); transition: width 0.3s ease; }
 .nav-link:hover::after, .nav-link:focus-visible::after { width: 100%; }
@@ -129,8 +137,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visibl
 .hero-content { position: relative; z-index: 3; max-width: 1320px; margin: 0 auto; padding: 0 28px; width: 100%; }
 
 .hero-wave { position: absolute; left: 0; right: 0; bottom: -1px; z-index: 3; line-height: 0; pointer-events: none; }
-.hero-wave svg { display: block; width: 100%; height: 260px; }
-@media (max-width: 700px) { .hero-wave svg { height: 140px; } }
+.hero-wave svg { display: block; width: 100%; height: 100px; }
+@media (max-width: 700px) { .hero-wave svg { height: 55px; } }
 
 .bg-parallax { background-attachment: fixed; background-size: cover; background-position: center; }
 .bg-klagon-1 { background-image: url(images/render3_rot_cw.jpg); }
@@ -146,7 +154,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visibl
 .luxury-card { max-width: 1180px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: stretch; border-radius: 22px; overflow: hidden; box-shadow: 0 34px 70px rgba(8,38,74,0.22); }
 .luxury-card-media { flex: 1 1 460px; min-height: 460px; position: relative; }
 .luxury-card-media img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
-.luxury-card-panel { flex: 1 1 380px; padding: 56px 50px; display: flex; flex-direction: column; justify-content: center; text-align: left; }
+.luxury-card-panel { position: relative; overflow: hidden; flex: 1 1 380px; padding: 56px 50px; display: flex; flex-direction: column; justify-content: center; text-align: left; }
+.luxury-card-panel::after { content: ''; position: absolute; top: -18px; right: -50px; width: 240px; height: 1px; background: linear-gradient(90deg, transparent, var(--gold) 50%, transparent); transform: rotate(-34deg); opacity: 0.3; }
 @media (max-width: 700px) {
   .luxury-card-media { min-height: 300px; }
   .luxury-card-panel { padding: 40px 28px; }
