@@ -13,6 +13,7 @@
   --ink: #0E2233;         /* body text on light backgrounds */
   --ink-soft: #4A5D6E;
   --line: #C7DCEC;        /* hairline on light backgrounds */
+  --ivory: #F4EEE2;       /* warm stone/ivory neutral — homepage's warm-neutral field */
 }
 
 * { box-sizing: border-box; }
@@ -137,8 +138,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visibl
 .hero-content { position: relative; z-index: 3; max-width: 1320px; margin: 0 auto; padding: 0 28px; width: 100%; }
 
 .hero-wave { position: absolute; left: 0; right: 0; bottom: -1px; z-index: 3; line-height: 0; pointer-events: none; }
-.hero-wave svg { display: block; width: 100%; height: 60px; }
-@media (max-width: 700px) { .hero-wave svg { height: 32px; } }
+.hero-wave svg { display: block; width: 100%; height: 64px; }
+@media (max-width: 700px) { .hero-wave svg { height: 36px; } }
 
 .bg-parallax { background-attachment: fixed; background-size: cover; background-position: center; }
 .bg-klagon-1 { background-image: url(images/render3_rot_cw.jpg); }
@@ -160,6 +161,31 @@ a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visibl
   .luxury-card-media { min-height: 300px; }
   .luxury-card-panel { padding: 40px 28px; }
 }
+
+/* Card variation: image-led 60/40 ratio, used once for the opening content beat */
+.luxury-card--wide .luxury-card-media { flex: 1.5 1 520px; }
+.luxury-card--wide .luxury-card-panel { flex: 1 1 340px; }
+
+/* Card variation: the photo breaks past the card's own rounded boundary */
+.luxury-card--breakout { overflow: visible; box-shadow: none; }
+.luxury-card--breakout .luxury-card-panel { border-radius: 22px; }
+.luxury-card--breakout .luxury-card-media { border-radius: 22px; box-shadow: 0 30px 60px rgba(8,38,74,0.3); margin: -28px -28px -28px 0; }
+@media (max-width: 700px) {
+  .luxury-card--breakout .luxury-card-media { margin: 0; }
+}
+
+/* Floating panel over a larger photograph — used for Wellness */
+.float-panel-wrap { max-width: 1180px; margin: 0 auto; }
+.float-panel-media { border-radius: 22px; overflow: hidden; box-shadow: 0 34px 70px rgba(8,38,74,0.22); }
+.float-panel-media img { width: 100%; display: block; aspect-ratio: 16 / 9; object-fit: cover; }
+.float-panel-card { position: relative; max-width: 380px; margin: -70px 0 0 60px; background: var(--navy); border-radius: 18px; padding: 36px 34px; box-shadow: 0 28px 56px rgba(8,38,74,0.35); z-index: 2; }
+@media (max-width: 700px) {
+  .float-panel-card { margin: -40px 16px 0; max-width: none; padding: 28px 24px; }
+}
+
+/* Recurring journey motif — thin gold thread + diamond waypoint, marks the path between sections */
+.journey-node { position: absolute; width: 13px; height: 13px; border: 1.5px solid var(--gold); transform: rotate(45deg); opacity: 0.55; }
+.journey-thread { position: absolute; width: 1px; background: linear-gradient(180deg, transparent, var(--gold), transparent); opacity: 0.35; }
 
 /* Category row (Stay / Dine / Wellness / Meet / Celebrate / Experience) */
 .category-row { display: flex; justify-content: space-between; gap: 8px; }
