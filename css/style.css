@@ -142,6 +142,16 @@ a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visibl
 .band-scrim { position: absolute; inset: 0; z-index: 2; background: linear-gradient(90deg, rgba(8,38,74,0.82) 0%, rgba(8,38,74,0.35) 60%, rgba(8,38,74,0.1) 100%); }
 .band-content { position: relative; z-index: 3; max-width: 1320px; margin: 0 auto; padding: 60px 28px; width: 100%; }
 
+/* Luxury split card — rounded photo + panel, used for Signature Stays / Meetings / Wellness */
+.luxury-card { max-width: 1180px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: stretch; border-radius: 22px; overflow: hidden; box-shadow: 0 34px 70px rgba(8,38,74,0.22); }
+.luxury-card-media { flex: 1 1 460px; min-height: 460px; position: relative; }
+.luxury-card-media img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.luxury-card-panel { flex: 1 1 380px; padding: 56px 50px; display: flex; flex-direction: column; justify-content: center; text-align: left; }
+@media (max-width: 700px) {
+  .luxury-card-media { min-height: 300px; }
+  .luxury-card-panel { padding: 40px 28px; }
+}
+
 /* Category row (Stay / Dine / Wellness / Meet / Celebrate / Experience) */
 .category-row { display: flex; justify-content: space-between; gap: 8px; }
 .category-item { flex: 1; text-align: center; padding: 20px 8px; position: relative; }
